@@ -1,0 +1,68 @@
+//- index.pug
+doctype html
+html
+  head
+    title Super Class Academy 
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+         ul
+
+          div#logo
+            img(src="/static/img/logo.png")
+            |SDA 
+
+          li #[a(href="/") Home] 
+          li #[a(href="/") About]
+          li #[a(href="/") Services]
+          li #[a(href="/") Class Info]
+          li #[a(href="/") Contact Us]
+
+            input(type="text" id="btn" placeholder="search.." name="search")
+           
+    
+    section#introSection
+        div Welcome to Super Dance Academ 
+        div.small Best Class Academy in all state 
+
+    section#missionSection 
+      h2 Our mission
+      div.card
+        h3 Dance perfection
+        div.card-box
+          div.card-img
+            img(src="/static/img/1.png")
+
+          div.card-content
+            p At The Super Class Academy Perfection, we live to dance and we love children.
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img
+            img(src="/static/img/2.png")
+
+          div.card-content
+            p  it is the best way to recreate yourself. All the gloom just get out of the window once whenever i dance. I second dancing a lot.
+      div.card
+        h3 Expert teaching 
+        div.card-box
+          div.card-img
+            img(src="/static/img/3.png")
+
+          div.card-content
+            p They are honest, offer feedback, support, and motivation. A great instructor will be respectful at all times and understand that coming into the studio to teach is more than “just a job
+
+    section#sponsorSection 
+        h2 Our Sponsors 
+        div#sponsors
+          img(src="/static/img/logo1.png",alt="Sponsor Image", class = "spimage")    
+          img(src="/static/img/logo2.jpg",alt="Sponsor Image", class = "spimage")    
+          img(src="/static/img/logo3.png",alt="Sponsor Image", class = "spimage")    
+          img(src="/static/img/logo4.png",alt="Sponsor Image", class = "spimage")    
+
+    footer#footer 
+        | Copyright © 2023 | SuperClassAcademy.com | All rights reserve 
+
+    script
+      include ../static/index.js

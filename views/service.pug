@@ -1,0 +1,23 @@
+extends base.pug
+
+block scripts 
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js")
+  script(src="../static/service.js")
+
+
+block style 
+   style
+      include ../static/style.css
+      include ../static/service.css
+    
+block content
+    div.containerbody
+      div.leftbar
+        button.lecture1 Button 
+        button.lecture2 Button 
+        p Lecture Series
+      div.rightbar
+       div.frame
+       div.discription
+
+       

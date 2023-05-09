@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Super Class Academy 
+    block scripts
+    block style 
+        style
+            include ../static/style.css
+      
+  body
+    nav#navbar
+         ul
+
+          div#logo
+            img(src="/static/img/logo.png")
+            |SCA 
+
+          li #[a(href="/") Home] 
+          li #[a(href="/service") Services]
+          li #[a(href="/") Class Info]
+          li #[a(href="/about") About]
+          li #[a(href="/contact") Contact Us]
+        
+    block content
+    block foot
+        footer#footer 
+          | Copyright © 2023 | SuperClassAcademy.com | All rights reserve To SCA

@@ -1,0 +1,54 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+
+block style 
+   style
+      include ../static/style.css
+
+block content 
+  
+    section#introSection
+        div Welcome to Super Class Academy  
+        div.small Only one SCA over india 
+
+    section#missionSection 
+      h2 Our mission
+      div.card
+        h3 Best Content Delivery
+        div.card-box
+          div.card-img
+            img(src="/static/img/1.png")
+
+          div.card-content
+            p Our job is not to create content. Our job is to change the world of the people who consume it.
+            br
+            | - Andrea Fryrear
+      div.card
+        h3 Your mission Our Vision
+        div.card-box
+          div.card-img
+            img(src="/static/img/2.png")
+
+          div.card-content
+            p  If one advances confidently in the direction of his dreams, and endeavors to live the life which he has imagined, he will meet with a success unexpected in common hours.
+      div.card
+        h3 Expert teaching 
+        div.card-box
+          div.card-img
+            img(src="/static/img/3.png")
+
+          div.card-content
+            p They are honest, offer feedback, support, and motivation. A great instructor will be respectful at all times and understand that coming into the studio to teach is more than “just a job
+
+    section#sponsorSection 
+        h2 Our Sponsors 
+        div#sponsors
+          img(src="/static/img/logo1.png",alt="Sponsor Image", class = "spimage")    
+          img(src="/static/img/logo2.jpg",alt="Sponsor Image", class = "spimage")    
+          img(src="/static/img/logo3.png",alt="Sponsor Image", class = "spimage")    
+          img(src="/static/img/logo4.png",alt="Sponsor Image", class = "spimage")    
+
+    
