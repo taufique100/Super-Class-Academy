@@ -3,6 +3,9 @@ html
   head
     title Super Class Academy 
     block scripts
+      script(src="https://fontawesome.com/icons/angles-down?f=sharp&s=regular&an=beat-fade")
+
+      link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     block style 
         style
             include ../static/style.css
@@ -10,13 +13,19 @@ html
   body
     nav#navbar
          ul
-
           div#logo
             img(src="/static/img/logo.png")
             |SCA 
-
           li #[a(href="/") Home] 
-          li #[a(href="/service") Services]
+          li #[a(href="/") Services]
+          div.dropdown
+            button.dropbtn Courses ↓
+              a(href="https://fontawesome.com/icons/angles-down?f=sharp&s=regular&an=beat-fade")
+                i.fa-sharp.fa-regular.fa-angles-down.fa-beat-fade
+            div.dropdown-content 
+              a(href ="/service") DBMS
+              a(href ="/html") HTML
+              a(href ="/css") CSS
           li #[a(href="/") Class Info]
           li #[a(href="/about") About]
           li #[a(href="/contact") Contact Us]

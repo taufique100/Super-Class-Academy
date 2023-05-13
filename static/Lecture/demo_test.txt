@@ -1,1 +1,11 @@
-what is your functionaliy used here for that.
+A CSS selector selects the HTML element(s) for styling purposes. CSS selectors select HTML elements according to their id, class, type, attribute, etc.
+There are many basic different types of selectors :-
+
+1. Element Selector
+2. Id Selector
+3. Class Selector
+4. Universal Selector
+5. Group Selector
+6. Attribute Selector
+7. Pseudo-Class Selector
+8. Pseudo-Element Selector

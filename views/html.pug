@@ -1,0 +1,36 @@
+extends base.pug
+
+block scripts 
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js")
+  script(src="../static/js/css.js")
+
+
+block style 
+   style
+      include ../static/style.css
+      include ../static/service.css
+    
+block content
+    div.containerbody
+      h3.header HTML (Hypertext Markup Language)
+      div.leftbar
+        h3.header Lecture series
+        button#lec1.lecture1 Lecture 1. Introduction of CSS
+        button.lecture1#lect2 Lecture 2. Basic Selector 
+        button#lec3.lecture1 Lecture 3. Padding and Marging
+        button#lec4.lecture1 Lecture 4. Opcity in CSS  
+        button#lec5.lecture1 Lecture 5. Min-height and Max-height 
+        button#lec6.lecture1 Lecture 6. Text Formating 
+        button#lec7.lecture1 Lecture 7. Z-index 
+        button#lec8.lecture1 Lecture 8. Box-shadow 
+        button#lec9.lecture1 Lecture 9. Gradient Background 
+        button#lec10.lecture1 Lecture 10. Media Queries 
+        button#lec11.lecture1 Lecture 11. 
+        button#lec12.lecture1 Lecture 12. 
+        button#lec13.lecture1 Lecture 13. 
+        button#lec14.lecture1 Lecture 14.    
+      
+      div.rightbar
+       div.frame
+       div.discription
+        h4 Description of Lecture...

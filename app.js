@@ -40,6 +40,14 @@ app.get('/service', (req, res)=>{
     const params = { };
     res.status(200).render('service.pug',params);
 });
+app.get('/css', (req, res)=>{
+    const params = { };
+    res.status(200).render('css.pug',params);
+});
+app.get('/html', (req, res)=>{
+    const params = { };
+    res.status(200).render('html.pug',params);
+});
 app.post('/contact', (req, res)=>{
     var myData = new contact(req.body);
     myData.save().then(()=>{
